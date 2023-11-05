@@ -1,0 +1,51 @@
+body {
+	background-color: #343434;
+}
+
+.card-container {
+	display: flex;
+	overflow-x: hidden;
+}
+
+.move-icons {
+	background-color: rgba(0, 0, 0, 0);
+	text-decoration: none;
+	border: none;
+}
+
+#left-button {
+	position: fixed;
+	left: 10;
+	align-self: center;
+	z-index: 999;
+}
+
+#left-button span {
+	font-size: 50px;
+}
+
+.card-list {
+	display: flex;
+	/*overflow: hidden;*/
+	white-space: nowrap;
+	transition: transform 0.5s;
+}
+
+.card {
+	padding: 0.3%;
+	transition: 0.3s;
+}
+
+.card:hover {
+	scale: 1.2;
+}
+
+.card img {
+	border-radius: 0.5em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+	
+}
+
+.card img:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
